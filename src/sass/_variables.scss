@@ -1,0 +1,10 @@
+@mixin acrom($width, $size) {
+  font-family: 'acrom', sans-serif;
+  font-weight: $width;
+  font-size: $size;
+}
+@mixin monts($size) {
+  font-family: 'montserrat', sans-serif;
+  font-weight: bold;
+  font-size: $size;
+}
