@@ -1,14 +1,13 @@
-
 $txt-tile: #1b202a;
-$txt-akcent-l:#00eaff;
-$txt-akcent-d:#f9ea23;
+$txt-akcent-l: #00eaff;
+$txt-akcent-d: #f4ad29;
 $btn-color: #ff702a;
 $txt-black: #222;
 $txt-white: #fff;
 
-@mixin acrom($width, $size, $color) {
+@mixin acrom($weight, $size, $color) {
   font-family: 'acrom', sans-serif;
-  font-weight: $width;
+  font-weight: $weight;
   font-size: $size;
   color: $color;
 }
@@ -19,9 +18,9 @@ $txt-white: #fff;
   color: $color;
 }
 
-h2 { 
-font-family: "Acrom", sans-serif;
-font-weight: bold; 
-font-size: 48px; 
-color: $txt-white;
+h2 {
+  font-family: 'Acrom', sans-serif;
+  font-weight: bold;
+  font-size: 48px;
+  color: $txt-white;
 }
