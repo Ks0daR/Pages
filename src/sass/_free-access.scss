@@ -1,16 +1,22 @@
-.container--fluid {
+.access-container--fluid {
   width: 100%;
   background-color: #edf0f2;
 }
-.container {
-  max-width: 320px;
+.access-container {
+  width: 320px;
   margin: auto;
+  min-height: 1094px;
 }
-.subtitle {
+.access-subtitle {
+  @include acrom(bold, 20px, $txt-black);
+  max-width: 225px;
   font-size: 20px;
   text-align: center;
+  margin: auto;
+  padding-bottom: 25px;
 }
-.card {
+.access-card {
+  position: relative;
   margin: auto;
   width: 225px;
   height: 230px;
@@ -18,6 +24,40 @@
   box-shadow: -20px 15px 6px #c7cacc;
   margin-bottom: 40px;
 }
-.card__description {
-  padding: 50px 30px;
+.access-card::before {
+  content: '';
+  border: 2px solid $txt-akcent-l;
+  width: 60px;
+  display: block;
+  position: absolute;
+  left: -14px;
+  top: 24px;
+  z-index: 1;
 }
+.access-card__number {
+  @include monts(50px, #f8f9f8);
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  right: 0;
+  top: -37px;
+  height: 37px;
+  overflow: hidden;
+}
+.access-card__description {
+  @include acrom(regular, 16px, $txt-black);
+  padding: 44px 35px 44px 30px;
+}
+.access-button {
+  margin: auto;
+  width: 224px;
+  height: 106px;
+  @include acrom (bold, 14px, $txt-white);
+  background-color: $btn-color;
+  display: block;
+  border: none;
+  &:hover{
+    background-color: hsl(24, 100%, 45%);
+  }
+}
+
