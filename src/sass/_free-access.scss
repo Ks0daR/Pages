@@ -55,6 +55,7 @@
   margin: auto;
   width: 224px;
   height: 106px;
+  box-shadow: 0 2px 10px rgba(255, 107, 8, 0.59);
   @include acrom(800, 14px, $txt-white);
   background-color: $btn-color;
   display: block;

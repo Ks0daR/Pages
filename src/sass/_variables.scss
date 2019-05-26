@@ -19,8 +19,17 @@ $txt-white: #fff;
 }
 
 h2 {
-  font-family: 'Acrom', sans-serif;
-  font-weight: bold;
-  font-size: 48px;
-  color: $txt-white;
+  @include acrom(bold, 20px, $txt-black);
+  // width: 225px;
+  font-size: 20px;
+  text-align: center;
+  // margin: auto;
+  padding-bottom: 25px;
+}
+@media (min-width: 768px) {
+  h2 {
+    // width: 580px;
+    @include acrom(800, 30px, $txt-black);
+    padding-bottom: 50px;
+  }
 }
