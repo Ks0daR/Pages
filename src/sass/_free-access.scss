@@ -3,10 +3,12 @@
   background-color: #edf0f2;
 }
 .access-container {
+  padding-top: 34px;
   width: 320px;
   margin: auto;
   min-height: 1094px;
 }
+
 .access-subtitle {
   @include acrom(bold, 20px, $txt-black);
   width: 225px;
