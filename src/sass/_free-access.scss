@@ -9,7 +9,7 @@
 }
 .access-subtitle {
   @include acrom(bold, 20px, $txt-black);
-  max-width: 225px;
+  width: 225px;
   font-size: 20px;
   text-align: center;
   margin: auto;
@@ -21,7 +21,7 @@
   width: 225px;
   height: 230px;
   background-color: $txt-white;
-  box-shadow: -20px 15px 6px #c7cacc;
+  box-shadow: -20px 20px 6px #c7cacc;
   margin-bottom: 40px;
 }
 .access-card::before {
@@ -45,19 +45,87 @@
   overflow: hidden;
 }
 .access-card__description {
+  margin: 0;
   @include acrom(regular, 16px, $txt-black);
-  padding: 44px 35px 44px 30px;
+  padding: 40px 30px;
 }
 .access-button {
   margin: auto;
   width: 224px;
   height: 106px;
-  @include acrom (bold, 14px, $txt-white);
+  @include acrom(800, 14px, $txt-white);
   background-color: $btn-color;
   display: block;
   border: none;
-  &:hover{
+  cursor: pointer;
+  &:hover {
     background-color: hsl(24, 100%, 45%);
   }
 }
+@media (min-width: 768px) {
+  .access-container {
+    padding-top: 50px;
+    width: 748px;
+    min-height: 548px;
+  }
+  .access-subtitle {
+    width: 580px;
+    @include acrom(800, 30px, $txt-black);
+    padding-bottom: 50px;
+  }
+  .access-cards {
+    display: flex;
+    justify-content: space-between;
+  }
+  .access-card__number {
+    @include monts(70px, #f8f9f8);
+    right: 0;
+    top: -50px;
+    height: 50px;
+    overflow: hidden;
+  }
+  .access-button {
+    width: 532px;
+    height: 70px;
+    @include acrom(800, 18px, $txt-white);
+  }
+}
 
+@media (min-width: 1200px) {
+  .access-container {
+    padding-top: 100px;
+    width: 1140px;
+    min-height: 856px;
+  }
+  .access-subtitle {
+    width: 1040px;
+    @include acrom(800, 48px, $txt-black);
+  }
+  .access-cards {
+    padding-bottom: 78px;
+  }
+  .access-card {
+    width: 350px;
+    height: 276px;
+  }
+  .access-card::before {
+    content: '';
+    border: 2px solid $txt-akcent-l;
+    width: 60px;
+    display: block;
+    position: absolute;
+    left: -10px;
+    top: 44px;
+    z-index: 1;
+  }
+  .access-card__description {
+    @include acrom(regular, 18px, $txt-black);
+    padding: 70px 30px;
+    line-height: 2;
+  }
+  .access-button {
+    width: 810px;
+    height: 108px;
+    @include acrom(800, 25px, $txt-white);
+  }
+}
