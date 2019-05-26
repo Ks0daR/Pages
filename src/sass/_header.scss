@@ -35,7 +35,12 @@ header {
   }
 }
 
+.form-box {
+  text-align: center;
+}
+
 form {
+  box-sizing: border-box;
   padding: 20px;
   background-color: #fff;
   margin-bottom: 12px;
@@ -170,17 +175,21 @@ form {
   .logo--wrp {
     margin-bottom: 72px;
   }
+
   header {
     width: 1170px;
     padding: 37px 15px 100px 15px;
   }
 
   .header-box--wrp {
+    align-items: flex-start;
+    justify-content: space-around;
     display: flex;
   }
 
   .header-box {
     &__line-1 {
+      margin-top: 0;
       font-size: 20px;
       width: 637px;
     }
@@ -194,24 +203,61 @@ form {
     &__line-3 {
       width: 611px;
       font-size: 35px;
+      letter-spacing: -0.32px;
+      // margin-bottom: 50px;
     }
 
     &__line-4 {
       width: 628px;
       font-size: 55px;
       letter-spacing: -2.2px;
+      margin-top: 0;
 
       span {
         font-size: 29px;
         letter-spacing: -1.17px;
       }
     }
-
-
+  }
+  
+  .form-box {
+    flex-basis: 460px;
+  
+    position: relative;
+    left: 36px;
   }
 
-form 
+  form {
+    width: 460px;
+    padding: 43px 24px 50px 35px;
+    text-align: left;
+    margin-bottom: 18px;
 
+    input {
+      width: 389px;
+      height: 60px;
+      font-size: 18px;
+      margin-bottom: 36px;
+    }
 
+    button {
+      width: 389px;
+      height: 60px;
+      font-size: 22px;
+    }
 
+    .title {
+      font-size: 35px;
+      letter-spacing: -0.22px;
+    }
+
+    .subtitle {
+      line-height: 28px;
+      font-size: 18px;
+    }
+  }
+
+  .privacy__link {
+    font-size: 17px;
+  }
 }
