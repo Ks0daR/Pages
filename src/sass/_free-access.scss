@@ -1,0 +1,23 @@
+.container--fluid {
+  width: 100%;
+  background-color: #edf0f2;
+}
+.container {
+  max-width: 320px;
+  margin: auto;
+}
+.subtitle {
+  font-size: 20px;
+  text-align: center;
+}
+.card {
+  margin: auto;
+  width: 225px;
+  height: 230px;
+  background-color: $txt-white;
+  box-shadow: -20px 15px 6px #c7cacc;
+  margin-bottom: 40px;
+}
+.card__description {
+  padding: 50px 30px;
+}
