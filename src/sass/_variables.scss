@@ -2,7 +2,8 @@ $txt-tile: #1b202a;
 $txt-akcent-l:#00eaff;
 $txt-akcent-d:#f9ea23;
 $btn-color: #ff702a;
-$txt: #222;
+$txt-black: #222;
+$txt-white: #fff;
 
 @mixin acrom($width, $size, $color) {
   font-family: 'acrom', sans-serif;
