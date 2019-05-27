@@ -24,12 +24,19 @@ h2 {
   font-size: 20px;
   text-align: center;
   // margin: auto;
-  padding-bottom: 25px;
+  // padding-bottom: 25px;
 }
 @media (min-width: 768px) {
   h2 {
     // width: 580px;
     @include acrom(800, 30px, $txt-black);
-    padding-bottom: 50px;
+    // padding-bottom: 50px;
+  }
+}
+
+@media (min-width: 1170px) {
+  h2 {
+    font-size: 48px;
+    font-weight: 700;
   }
 }
