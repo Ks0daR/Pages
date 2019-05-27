@@ -63,7 +63,7 @@ function sprite() {
 }
 
 function images() {
-  return src(['src/images/**/*.{png,jpg,jpeg,svg}', '!src/images/icons/**/*'])
+  return src(['src/images/**/*.{png,jpg,jpeg,svg}'])
    // .pipe(
     //  imagemin([
     //    imagemin.jpegtran({ progressive: true }),

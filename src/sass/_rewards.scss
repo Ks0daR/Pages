@@ -1,0 +1,136 @@
+.rewards-container--fluid {
+  width: 100%;
+  background-color: $txt-white;
+}
+.rewards-container {
+  padding-top: 34px;
+  width: 320px;
+  margin: auto;
+  min-height: 1094px;
+}
+.rewards-description {
+  width: 225px;
+  margin: auto;
+}
+.rewards-subtitle {
+  @include acrom(bold, 20px, $txt-black);
+  padding-bottom: 35px;
+  text-align: left;
+  line-height: 1.5;
+}
+.rewards-name {
+  @include acrom(800, 16px, $txt-black);
+  &--bgnd {
+    background-color: #edf0f2;
+    display: inline;
+  }
+}
+.rewards-cards {
+  padding-top: 25px;
+}
+.rewards-card {
+  position: relative;
+  margin: auto;
+  width: 225px;
+  height: 414px;
+  background-color: $txt-white;
+  box-shadow: -25px 25px 5px #cbcecf, 10px -5px 20px #f0f0f0;
+  margin-bottom: 84px;
+  padding-top: 40px;
+}
+.rewards-card::before {
+  content: '';
+  border: 2px solid $txt-akcent-l;
+  width: 60px;
+  display: block;
+  position: absolute;
+  left: -14px;
+  top: 24px;
+  z-index: 1;
+}
+.rewards-card__number {
+  @include monts(70px, #edf0f2);
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  right: 0;
+  top: -50px;
+  height: 50px;
+  overflow: hidden;
+}
+.rewards-card__title {
+  margin: 0;
+  padding-left: 26px;
+  @include acrom(800, 18px, $txt-black);
+  text-transform: uppercase;
+  line-height: 1.3;
+  width: 140px;
+  padding-bottom: 10px;
+}
+.rewards-card__description {
+  margin: 0;
+  width: 188px;
+  @include acrom(regular, 14px, $txt-black);
+  padding-left: 26px;
+  line-height: 1.5;
+}
+.rewards-card__img {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.rewards-social {
+  background-image: url(../images/OOH.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  width: 225px;
+  margin: auto;
+}
+.rewards-social__title {
+  text-transform: uppercase;
+  @include acrom(800, 24px, $txt-black);
+  line-height: 1.4;
+  margin-bottom: 16px;
+}
+.rewards-social__description {
+  @include acrom(regular, 14px, $txt-black);
+  line-height: 1.5;
+}
+.rewards-partners {
+  width: 225px;
+  margin: auto;
+}
+.rewards-partners__logo{
+    padding-top: 40px;
+    padding-bottom: 50px;
+    width: 320px;
+}
+.rewards-logo{
+    padding: 10px 15px;
+}
+//   @media (min-width: 768px){
+//     .rewards-container {
+//         width: 768px;
+//         min-height: 696px;
+//       }
+//       .rewards-description{
+//         width: 600px;
+
+//     }
+//     .rewards-subtitle {
+//         @include acrom(800, 30px, $txt-black);
+//         padding-bottom: 15px;
+//         text-align: left;
+//         line-height: 1.5;
+//       }
+//       .rewards-name{
+//         @include acrom(800, 16px, $txt-black);
+//         padding-bottom: 25px;
+//       }
+//       .rewards-cards{
+//           display: flex;
+//           justify-content: space-around;
+//       }
+//   }
