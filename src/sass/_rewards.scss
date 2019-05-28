@@ -13,20 +13,24 @@
   margin: auto;
 }
 .rewards-subtitle {
-  @include acrom(bold, 20px, $txt-black);
+  @include acrom(800, 20px, $txt-black);
   padding-bottom: 35px;
   text-align: left;
   line-height: 1.5;
 }
 .rewards-name {
   @include acrom(800, 16px, $txt-black);
-  &--bgnd {
-    background-color: #edf0f2;
-    display: inline;
+  background-color: #edf0f2;
+  display: inline;
+  &--cards {
+    margin-left: 50px;
+  }
+  &--partners{
+    margin-left: 45px;
   }
 }
 .rewards-cards {
-  padding-top: 25px;
+  padding-top: 45px;
 }
 .rewards-card {
   position: relative;
@@ -37,16 +41,16 @@
   box-shadow: -25px 25px 5px #cbcecf, 10px -5px 20px #f0f0f0;
   margin-bottom: 84px;
   padding-top: 40px;
-}
-.rewards-card::before {
-  content: '';
-  border: 2px solid $txt-akcent-l;
-  width: 60px;
-  display: block;
-  position: absolute;
-  left: -14px;
-  top: 24px;
-  z-index: 1;
+  &::before {
+    content: '';
+    border: 2px solid $txt-akcent-l;
+    width: 60px;
+    display: block;
+    position: absolute;
+    left: -14px;
+    top: 24px;
+    z-index: 1;
+  }
 }
 .rewards-card__number {
   @include monts(70px, #edf0f2);
@@ -70,17 +74,14 @@
 .rewards-card__description {
   margin: 0;
   width: 188px;
+  height: 144px;
   @include acrom(regular, 14px, $txt-black);
   padding-left: 26px;
   line-height: 1.5;
 }
-.rewards-card__img {
-  position: absolute;
-  bottom: 30px;
-  left: 50%;
-  transform: translate(-50%);
+.rewards-img {
+  text-align: center;
 }
-
 .rewards-social {
   background-image: url(../images/OOH.png);
   background-repeat: no-repeat;
@@ -97,40 +98,111 @@
 .rewards-social__description {
   @include acrom(regular, 14px, $txt-black);
   line-height: 1.5;
+  padding-bottom: 20px;
 }
 .rewards-partners {
-  width: 225px;
-  margin: auto;
+  width: 320px;
+margin: auto;
 }
-.rewards-partners__logo{
-    padding-top: 40px;
-    padding-bottom: 50px;
-    width: 320px;
+.rewards-partners__logo {
+  padding-top: 40px;
+  padding-bottom: 50px;
+  width: 320px;
+ 
 }
-.rewards-logo{
-    padding: 10px 15px;
+.rewards-logo {
+  padding: 10px 12px;
 }
-//   @media (min-width: 768px){
-//     .rewards-container {
-//         width: 768px;
-//         min-height: 696px;
-//       }
-//       .rewards-description{
-//         width: 600px;
-
-//     }
-//     .rewards-subtitle {
-//         @include acrom(800, 30px, $txt-black);
-//         padding-bottom: 15px;
-//         text-align: left;
-//         line-height: 1.5;
-//       }
-//       .rewards-name{
-//         @include acrom(800, 16px, $txt-black);
-//         padding-bottom: 25px;
-//       }
-//       .rewards-cards{
-//           display: flex;
-//           justify-content: space-around;
-//       }
-//   }
+@media (min-width: 768px) {
+  .rewards-container {
+    width: 768px;
+    min-height: 696px;
+  }
+  .rewards-description {
+    width: 600px;
+    margin-bottom: 30px;
+  }
+  .rewards-subtitle {
+    @include acrom(800, 30px, $txt-black);
+    padding-bottom: 15px;
+    text-align: left;
+    line-height: 1.5;
+  }
+  .rewards-name {
+    @include acrom(800, 16px, $txt-black);
+    margin-bottom: 25px;
+    &--partners{
+      margin-left: 10px;
+    }
+  }
+  .rewards-cards {
+    display: flex;
+    justify-content: space-around;
+  }
+  .rewards-social {
+    background-position: top right;
+    width: 418px;
+    margin-bottom: 40px;
+  }
+  .rewards-partners {
+    width: 654px;
+    &__logo {
+      width: 684px;
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .rewards-container {
+    width: 1140px;
+    min-height: 980px;
+  }
+  .rewards-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .rewards-description {
+    width: 700px;
+    margin: 30px;
+  }
+  .rewards-subtitle {
+    @include acrom(800, 48px, $txt-black);
+    padding-bottom: 15px;
+    text-align: left;
+    line-height: 1.5;
+  }
+  .rewards-social {
+    order: 0;
+    width: 390px;
+  }
+  .rewards-partners {
+    order: 1;
+    width: 668px;
+    margin: 0;
+    margin-left: 80px;
+  }
+  .rewards {
+    order: 2;
+    width: 1156px;
+  }
+  .rewards-card {
+    position: relative;
+    display: flex;
+    width: 390px;
+    box-shadow: none;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 300px;
+    align-items: flex-start;
+    &__number {
+      transform: rotate(270deg);
+      @include acrom(800, 30px, #edf0f2);
+    }
+    &::before {
+      display: none;
+    }
+  }
+  .rewards-name--cards {
+    margin-left: 5px;
+  }
+}
