@@ -1,0 +1,72 @@
+.question {
+  width: 260px;
+  margin: auto;
+  padding-top: 34px;
+
+  h2 {
+    margin-top: 0;
+    text-align: left;
+    letter-spacing: -0.8px;
+    padding-bottom: 0;
+  }
+
+  &__list {
+    list-style: none;
+    list-style-image: url('../images/arrow.png');
+    margin-bottom: 35px;
+    padding-left: 30px;
+  }
+
+  .list__item {
+    @include acrom(500, 14px, $txt-black);
+
+    p {
+      margin-left: 10px;
+    }
+  }
+
+  .list__item::before {
+  }
+}
+
+@media (min-width: 768px) {
+  .question {
+    width: 620px;
+    padding-top: 54px;
+
+    &__list {
+      margin-bottom: 55px;
+    }
+
+    .list__item {
+      font-size: 16px;
+
+      &:first-of-type {
+        width: 394px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .question {
+    padding: 132px 15px 97px 15px;
+    width: 1140px;
+    display: flex;
+    justify-content: space-between;
+
+    h2 {
+      width: 486px;
+      letter-spacing: -1.92px;
+    }
+
+    &__list {
+      margin-top: 0;
+      width: 487px;
+    }
+
+    .list__item {
+      font-size: 18px;
+    }
+  }
+}

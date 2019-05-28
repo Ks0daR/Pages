@@ -1,0 +1,34 @@
+footer {
+  background: url('../images/stars.png') no-repeat top center;
+  //   background-image: url(../images/footer-img.png);
+  .team--wrp {
+    background: url('../images/footer-img.png') no-repeat center center;
+
+    .footer--wrp {
+      padding-top: 62px;
+      width: 260px;
+      margin: auto;
+
+      .request--wrp {
+        margin-bottom: 302px;
+        text-align: center;
+
+        .request {
+          @include acrom(bold, 20px, $txt-akcent-l);
+          text-transform: uppercase;
+        }
+      }
+
+      .footer-logo--wrp {
+        margin-bottom: 14px;
+        text-align: center;
+      }
+
+      .footer-description {
+        @include acrom(normal, 12px, $txt-white);
+        padding-bottom: 36px;
+        text-align: center;
+      }
+    }
+  }
+}
