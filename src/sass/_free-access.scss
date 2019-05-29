@@ -103,6 +103,7 @@
   .access-subtitle {
     width: 1040px;
     @include acrom(800, 48px, $txt-black);
+    padding-bottom: 116px;
   }
   .access-cards {
     padding-bottom: 78px;
@@ -125,6 +126,11 @@
     @include acrom(regular, 18px, $txt-black);
     padding: 70px 30px;
     line-height: 2;
+  }
+  .access-card__number {
+    @include monts(150px, #f8f9f8);
+    top: -105px;
+    height: 105px;
   }
   .access-button {
     width: 810px;
