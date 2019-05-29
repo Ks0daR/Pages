@@ -19,6 +19,7 @@
 
   .list__item {
     @include acrom(500, 14px, $txt-black);
+    line-height: 1.5;
 
     p {
       margin-left: 10px;
