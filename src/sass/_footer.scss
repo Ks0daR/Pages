@@ -1,8 +1,12 @@
 footer {
-  background: url('../images/stars.png') no-repeat top center;
+  background-color: #181c27;
+  background: url('../images/stars-des_n.png') no-repeat top center;
   //   background-image: url(../images/footer-img.png);
+  background-size: cover;
+
   .team--wrp {
-    background: url('../images/footer-img.png') no-repeat center center;
+    background: url('../images/team-mob.png') no-repeat center center;
+    background-size: cover;
 
     .footer--wrp {
       padding-top: 62px;
@@ -19,15 +23,99 @@ footer {
         }
       }
 
-      .footer-logo--wrp {
-        margin-bottom: 14px;
-        text-align: center;
+      .footer-description {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 36px;
+        align-items: center;
       }
 
-      .footer-description {
+      .footer-logo--wrp {
+        margin-bottom: 14px;
+      }
+
+      p {
         @include acrom(normal, 12px, $txt-white);
-        padding-bottom: 36px;
-        text-align: center;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  footer {
+    // background-image: url('../images/star-tab.png');
+
+    .team--wrp {
+      background-image: url('../images/team-tab.png');
+
+      .footer--wrp {
+        padding-top: 92px;
+        width: 620px;
+
+        .request--wrp {
+          margin-bottom: 285px;
+          
+          .request {
+            font-size: 30px;
+            
+          }
+        }
+
+        .footer-logo--wrp {
+          margin-bottom: 0;
+        }
+
+        .footer-description {
+          flex-direction: row;
+          justify-content: flex-start;
+          align-items: center;
+          padding-bottom: 19px;
+          margin-bottom: 0;
+          
+          p {
+            font-size: 18px;
+            margin: 0;
+            
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 1200px) {
+  footer {
+    // background-image: url('../images/star-tab.png');
+
+    .team--wrp {
+      background-image: url('../images/team-des.png');
+
+      .footer--wrp {
+        padding: 0 15px;
+        padding-top: 262px;
+        width: 1170px;
+
+        .request--wrp {
+          margin-bottom: 638px;
+
+          .request {
+            font-size: 60px;
+            
+          }
+        }
+
+
+
+        .footer-description {
+          
+          padding-bottom: 67px;
+          
+          
+          p {
+            font-size: 25px;
+           
+            
+          }
+        }
       }
     }
   }
