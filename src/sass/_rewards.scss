@@ -89,6 +89,11 @@
   width: 225px;
   margin: auto;
 }
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .rewards-social {
+      background-image: url(../images/OOH@2x.png);
+  }
+}
 .rewards-social__title {
   text-transform: uppercase;
   @include acrom(800, 24px, $txt-black);
@@ -115,7 +120,7 @@ margin: auto;
 }
 @media (min-width: 768px) {
   .rewards-container {
-    width: 768px;
+    width: 748px;
     min-height: 696px;
   }
   .rewards-description {
