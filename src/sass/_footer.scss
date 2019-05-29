@@ -1,8 +1,9 @@
 footer {
   background-color: #181c27;
-  background: url('../images/stars-des_n.png') no-repeat top center;
+  background: url('../images/stars-des.png') no-repeat top center;
   //   background-image: url(../images/footer-img.png);
   background-size: cover;
+
 
   .team--wrp {
     background: url('../images/team-mob.png') no-repeat center center;
@@ -39,6 +40,14 @@ footer {
       }
     }
   }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2) {
+  footer {
+      background-image: url('../images/stars-des@2x.png');
+  }
+  .team--wrp {
+    background-image: url('../images/team-mob@2x.png')
 }
 
 @media (min-width: 768px) {
@@ -80,6 +89,12 @@ footer {
     }
   }
 }
+
+@media (-webkit-min-device-pixel-ratio: 2) {
+.team--wrp {
+  background-image: url('../images/team-tab@2x.png')
+}
+}
 @media (min-width: 1200px) {
   footer {
     // background-image: url('../images/star-tab.png');
@@ -109,5 +124,11 @@ footer {
         }
       }
     }
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .team--wrp {
+    background-image: url('../images/team-des@2x.png')
   }
 }
