@@ -1,7 +1,7 @@
 .market {
   @include acrom(400, 14px, $txt-black);
   box-sizing: border-box;
-  max-width: 320px;
+  width: 260px;
   margin: auto;
   padding: 10px 30px 20px;
   line-height: 22px;
@@ -106,7 +106,7 @@
   &-item {
     font-size: 30px;
     color: $txt-akcent-l;
-
+    
     &__text {
       font-size: 14px;
       color: black;
@@ -121,6 +121,7 @@ li.offers-item::marker {
 
 .map {
   position: absolute;
+  // display: none;
   z-index: -1;
   width: 300px;
   height: 200px;
@@ -130,7 +131,7 @@ li.offers-item::marker {
 
 @media (min-width: 768px) {
   .market {
-    max-width: 748px;
+    width: 748px;
     padding: 0 25px 50px;
 
     &__title {
@@ -161,7 +162,7 @@ li.offers-item::marker {
     &::before {
       content: '';
       background: #e4e7e9;
-      width: 700px;
+      width: 700px; 
       height: 568px;
       position: absolute;
       left: -15px;
@@ -171,8 +172,9 @@ li.offers-item::marker {
   }
 
   .map {
+    // display: none;
     top: 220px;
-    right: 50px;
+    right: 55px;
     fill: $txt-akcent-l;
     z-index: -1;
   }
@@ -219,7 +221,7 @@ li.offers-item::marker {
 
 @media (min-width: 1200px) {
   .market {
-    max-width: 1200px;
+    width: 1170px;
     flex-direction: row;
     align-items: flex-end;
     padding-bottom: 120px;

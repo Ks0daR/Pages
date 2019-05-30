@@ -1,5 +1,8 @@
 .itway-wrp {
-  background-image: url(../images/itway-bg.png);
+  background-color: #181c27;
+  background-image: url('../images/header_bg.png');
+  background-repeat: no-repeat;
+  background-position: center right;
 }
 
 .itway {
@@ -58,12 +61,21 @@
 }
 
 @media (-webkit-min-device-pixel-ratio: 2) {
-  .itway {
-    background-image: url(../images/itway-bg@2x.png);
+  .itway-wrp {
+    background-image: url(../images/header_bg@2x.png);
   }
 }
 
 @media (min-width: 768px) {
+  .itway-wrp {
+    background-image: url('../images/headerbgtablet.png');
+  }
+  @media (-webkit-min-device-pixel-ratio: 2) {
+    .itway-wrp {
+      background-image: url('../images/headerbgtablet@2x.png');
+    }
+  }
+
   .itway {
     width: 748px;
     padding: 60px 45px 60px 65px;
@@ -94,6 +106,17 @@
 }
 
 @media (min-width: 1200px) {
+  .itway-wrp {
+    background-image: url('../images/header_desbg.png');
+    background-position: center center;
+  }
+
+  @media (-webkit-min-device-pixel-ratio: 2) {
+    .itway-wrp {
+      background-image: url('../images/header_desbg@2x.png');
+    }
+  }
+  
   .itway {
     width: 1170px;
     height: 640px;
