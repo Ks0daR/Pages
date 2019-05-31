@@ -3,7 +3,7 @@
   background-color: $txt-white;
 }
 .rewards-container {
-  padding-top: 34px;
+  padding-top: 24px;
   width: 320px;
   margin: auto;
   min-height: 1094px;
@@ -14,7 +14,7 @@
 }
 .rewards-subtitle {
   @include acrom(800, 20px, $txt-black);
-  padding-bottom: 35px;
+  padding-bottom: 20px;
   text-align: left;
   line-height: 1.5;
 }
@@ -38,17 +38,19 @@
   width: 225px;
   height: 414px;
   background-color: $txt-white;
-  box-shadow: -25px 25px 5px #cbcecf, 10px -5px 20px #f0f0f0;
-  margin-bottom: 84px;
+  box-shadow: -20px 16px 0 0 #e6e9eb, 10px -5px 20px #f0f0f0;
+
+  margin-bottom: 74px;
   padding-top: 40px;
+
   &::before {
     content: '';
-    border: 2px solid $txt-akcent-l;
+    border: 1px solid $txt-akcent-l;
     width: 60px;
     display: block;
     position: absolute;
     left: -14px;
-    top: 24px;
+    top: 15px;
     z-index: 1;
   }
 }
@@ -84,6 +86,7 @@
 }
 .rewards-social {
   background-image: url(../images/OOH.png);
+  background-size: 65%;
   background-repeat: no-repeat;
   background-position: top center;
   width: 225px;
@@ -97,7 +100,7 @@
 .rewards-social__title {
   text-transform: uppercase;
   @include acrom(800, 24px, $txt-black);
-  line-height: 1.4;
+  line-height: 30px;
   margin-bottom: 16px;
 }
 .rewards-social__description {
@@ -112,11 +115,22 @@ margin: auto;
 .rewards-partners__logo {
   padding-top: 40px;
   padding-bottom: 50px;
-  width: 320px;
- 
+  width: 270px;
+  margin: auto;
+  font-size: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
 }
+
+.rewards-parents__logo:nth-child(9){
+  padding-right: 30px;
+}
+
 .rewards-logo {
-  padding: 10px 12px;
+  height: 100%;
+  padding: 10px 5px;
 }
 @media (min-width: 768px) {
   .rewards-container {
@@ -126,18 +140,20 @@ margin: auto;
   .rewards-description {
     width: 600px;
     margin-bottom: 30px;
+    margin-left: 50px;
   }
   .rewards-subtitle {
     @include acrom(800, 30px, $txt-black);
     padding-bottom: 15px;
     text-align: left;
-    line-height: 1.5;
+    line-height: 40px;
+    margin: 20px 0 0;
   }
   .rewards-name {
     @include acrom(800, 16px, $txt-black);
-    margin-bottom: 25px;
+
     &--partners{
-      margin-left: 10px;
+      margin: 0 0 0 10px;
     }
   }
   .rewards-cards {
@@ -152,8 +168,12 @@ margin: auto;
   .rewards-partners {
     width: 654px;
     &__logo {
-      width: 684px;
+      width: 100%;
     }
+  }
+
+  .rewards-logo {
+    padding: 10px;
   }
 }
 @media (min-width: 1200px) {
@@ -168,13 +188,13 @@ margin: auto;
   }
   .rewards-description {
     width: 700px;
-    margin: 30px;
+    margin: 30px 0;
   }
   .rewards-subtitle {
     @include acrom(800, 48px, $txt-black);
     padding-bottom: 15px;
     text-align: left;
-    line-height: 1.5;
+    line-height: 60px;
   }
   .rewards-social {
     order: 0;

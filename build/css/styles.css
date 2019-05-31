@@ -477,6 +477,7 @@ header {
   font-size: 14px;
   color: #fff;
   letter-spacing: -1px;
+  line-height: 1.286;
 }
 
 .header-box__line-2 {
@@ -485,6 +486,7 @@ header {
   font-size: 20px;
   color: #00eaff;
   letter-spacing: -0.8px;
+  line-height: 1.3;
 }
 
 .header-box__line-3 {
@@ -492,6 +494,7 @@ header {
   font-weight: 500;
   font-size: 14px;
   color: #fff;
+  line-height: 18px;
 }
 
 .header-box__line-4 {
@@ -499,6 +502,7 @@ header {
   font-weight: bold;
   font-size: 20px;
   color: #f4ad29;
+  line-height: 1.2;
 }
 
 .header-box__line-4 span {
@@ -519,10 +523,12 @@ form {
 
 form .title {
   font-family: 'acrom', sans-serif;
-  font-weight: bold;
+  font-weight: 800;
   font-size: 16px;
   color: #222;
   margin-top: 0;
+  text-align: left;
+  line-height: 20px;
 }
 
 form .subtitle {
@@ -530,6 +536,8 @@ form .subtitle {
   font-weight: normal;
   font-size: 13px;
   color: #222;
+  text-align: left;
+  line-height: 18px;
 }
 
 form input {
@@ -540,6 +548,34 @@ form input {
   border: 1px solid #525252;
   margin-bottom: 12px;
   padding: 15px;
+}
+
+form input::-webkit-input-placeholder {
+  font-family: 'acrom', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: #a2a2a2;
+}
+
+form input:-ms-input-placeholder {
+  font-family: 'acrom', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: #a2a2a2;
+}
+
+form input::-ms-input-placeholder {
+  font-family: 'acrom', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: #a2a2a2;
+}
+
+form input::placeholder {
+  font-family: 'acrom', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: #a2a2a2;
 }
 
 form input:last-of-type {
@@ -593,9 +629,14 @@ form button:hover {
 }
 
 .question h2 {
+  font-family: 'acrom', sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+  color: #222;
   margin-top: 0;
   text-align: left;
-  letter-spacing: -0.8px;
+  line-height: 1.5;
+  letter-spacing: -1.4px;
   padding-bottom: 0;
 }
 
@@ -603,18 +644,19 @@ form button:hover {
   list-style: none;
   list-style-image: url("../images/arrow.png");
   margin-bottom: 35px;
-  padding-left: 30px;
+  padding-left: 25px;
+  text-align: left;
 }
 
-.question .list__item {
+.list__item {
   font-family: 'acrom', sans-serif;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 14px;
   color: #222;
   line-height: 1.5;
 }
 
-.question .list__item p {
+.list__item p {
   margin-left: 10px;
 }
 
@@ -632,14 +674,15 @@ form button:hover {
 
 .access-subtitle {
   font-family: 'acrom', sans-serif;
-  font-weight: bold;
+  font-weight: 800;
   font-size: 20px;
   color: #222;
   width: 225px;
-  font-size: 20px;
+  line-height: 1.5;
   text-align: center;
   margin: auto;
-  padding-bottom: 25px;
+  padding-bottom: 12px;
+  letter-spacing: -0.8px;
 }
 
 .access-cards {
@@ -652,13 +695,13 @@ form button:hover {
   width: 225px;
   height: 230px;
   background-color: #fff;
-  box-shadow: -20px 20px 6px #c7cacc;
-  margin-bottom: 40px;
+  box-shadow: -19px 16px 0 0 #e6e9eb;
+  margin-bottom: 45px;
 }
 
 .access-card::before {
   content: '';
-  border: 2px solid #00eaff;
+  border: 1px solid #00eaff;
   width: 60px;
   display: block;
   position: absolute;
@@ -684,21 +727,25 @@ form button:hover {
 .access-card__description {
   margin: 0;
   font-family: 'acrom', sans-serif;
-  font-weight: regular;
+  font-weight: 400;
   font-size: 16px;
   color: #222;
   padding: 40px 30px;
+  letter-spacing: -0.2px;
+  line-height: 22px;
 }
 
 .access-button {
-  margin: auto;
-  width: 224px;
-  height: 106px;
-  box-shadow: 0 2px 10px rgba(255, 107, 8, 0.59);
   font-family: 'acrom', sans-serif;
   font-weight: 800;
   font-size: 14px;
   color: #fff;
+  text-transform: uppercase;
+  line-height: 20px;
+  margin: auto;
+  width: 224px;
+  height: 106px;
+  box-shadow: 0 2px 10px rgba(255, 107, 8, 0.59);
   background-color: #ff702a;
   display: block;
   border: none;
@@ -717,12 +764,11 @@ form button:hover {
   box-sizing: border-box;
   width: 260px;
   margin: auto;
-  padding: 10px 30px 20px;
+  padding: 10px 0 20px;
   line-height: 22px;
   letter-spacing: -0.04em;
   display: flex;
   flex-direction: column;
-  overflow: hidden;
 }
 
 .market__title {
@@ -732,7 +778,7 @@ form button:hover {
   color: #1b202a;
   line-height: 30px;
   letter-spacing: -0.04em;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
   text-align: left;
   padding: 0;
 }
@@ -760,7 +806,6 @@ form button:hover {
 
 .interestit {
   padding: 0 15px;
-  overflow: hidden;
 }
 
 .reviews {
@@ -859,6 +904,7 @@ li.offers-item::marker {
   width: 300px;
   height: 200px;
   top: 490px;
+  left: -35px;
   fill: #eceff1;
 }
 
@@ -942,7 +988,7 @@ li.offers-item::marker {
 }
 
 .rewards-container {
-  padding-top: 34px;
+  padding-top: 24px;
   width: 320px;
   margin: auto;
   min-height: 1094px;
@@ -958,7 +1004,7 @@ li.offers-item::marker {
   font-weight: 800;
   font-size: 20px;
   color: #222;
-  padding-bottom: 35px;
+  padding-bottom: 20px;
   text-align: left;
   line-height: 1.5;
 }
@@ -990,19 +1036,19 @@ li.offers-item::marker {
   width: 225px;
   height: 414px;
   background-color: #fff;
-  box-shadow: -25px 25px 5px #cbcecf, 10px -5px 20px #f0f0f0;
-  margin-bottom: 84px;
+  box-shadow: -20px 16px 0 0 #e6e9eb, 10px -5px 20px #f0f0f0;
+  margin-bottom: 74px;
   padding-top: 40px;
 }
 
 .rewards-card::before {
   content: '';
-  border: 2px solid #00eaff;
+  border: 1px solid #00eaff;
   width: 60px;
   display: block;
   position: absolute;
   left: -14px;
-  top: 24px;
+  top: 15px;
   z-index: 1;
 }
 
@@ -1051,6 +1097,7 @@ li.offers-item::marker {
 
 .rewards-social {
   background-image: url(../images/OOH.png);
+  background-size: 65%;
   background-repeat: no-repeat;
   background-position: top center;
   width: 225px;
@@ -1063,7 +1110,7 @@ li.offers-item::marker {
   font-weight: 800;
   font-size: 24px;
   color: #222;
-  line-height: 1.4;
+  line-height: 30px;
   margin-bottom: 16px;
 }
 
@@ -1084,11 +1131,22 @@ li.offers-item::marker {
 .rewards-partners__logo {
   padding-top: 40px;
   padding-bottom: 50px;
-  width: 320px;
+  width: 270px;
+  margin: auto;
+  font-size: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rewards-parents__logo:nth-child(9) {
+  padding-right: 30px;
 }
 
 .rewards-logo {
-  padding: 10px 12px;
+  height: 100%;
+  padding: 10px 5px;
 }
 
 footer {
@@ -1109,7 +1167,7 @@ footer .team--wrp .footer--wrp {
 }
 
 footer .team--wrp .footer--wrp .request--wrp {
-  margin-bottom: 302px;
+  margin-bottom: 280px;
   text-align: center;
 }
 
@@ -1124,7 +1182,7 @@ footer .team--wrp .footer--wrp .request--wrp .request {
 footer .team--wrp .footer--wrp .footer-description {
   display: flex;
   flex-direction: column;
-  padding-bottom: 36px;
+  padding-bottom: 16px;
   align-items: center;
 }
 
@@ -1157,8 +1215,12 @@ footer .team--wrp .footer--wrp p {
 
   header {
     box-sizing: border-box;
-    padding: 40px 74px 48px 74px;
+    padding: 40px 64px 48px 64px;
     width: 748px;
+  }
+
+  .header-box-wrp {
+    width: 620px;
   }
 
   .header-box {
@@ -1177,10 +1239,12 @@ footer .team--wrp .footer--wrp p {
 
   .header-box__line-3 {
     font-size: 18px;
+    line-height: 26px;
   }
 
   .header-box__line-4 {
     font-size: 40px;
+    margin: 20px 0;
   }
 
   .header-box__line-4 span {
@@ -1189,6 +1253,7 @@ footer .team--wrp .footer--wrp p {
 
   form {
     padding: 34px 77px 41px 77px;
+    width: 100%;
     text-align: center;
   }
 
@@ -1202,10 +1267,13 @@ footer .team--wrp .footer--wrp p {
 
   form .title {
     font-size: 24px;
+    text-align: center;
+    line-height: 28px;
   }
 
   form .subtitle {
     margin-bottom: 27px;
+    text-align: center;
   }
 
   form button {
@@ -1215,6 +1283,11 @@ footer .team--wrp .footer--wrp p {
   .question {
     width: 620px;
     padding-top: 54px;
+  }
+
+  .question h2 {
+    font-size: 30px;
+    line-height: 40px;
   }
 
   .question__list {
@@ -1236,11 +1309,12 @@ footer .team--wrp .footer--wrp p {
   }
 
   .access-subtitle {
-    width: 580px;
     font-family: 'acrom', sans-serif;
     font-weight: 800;
     font-size: 30px;
     color: #222;
+    line-height: 40px;
+    width: 580px;
     padding-bottom: 50px;
   }
 
@@ -1261,6 +1335,7 @@ footer .team--wrp .footer--wrp p {
   }
 
   .access-button {
+    text-transform: none;
     width: 532px;
     height: 70px;
     font-family: 'acrom', sans-serif;
@@ -1312,7 +1387,7 @@ footer .team--wrp .footer--wrp p {
 
   .map {
     top: 220px;
-    right: 55px;
+    left: 335px;
     fill: #00eaff;
     z-index: -1;
   }
@@ -1361,7 +1436,7 @@ footer .team--wrp .footer--wrp p {
   }
 
   .itway {
-    width: 748px;
+    width: 768px;
     padding: 60px 45px 60px 65px;
     font-size: 16px;
   }
@@ -1396,6 +1471,7 @@ footer .team--wrp .footer--wrp p {
   .rewards-description {
     width: 600px;
     margin-bottom: 30px;
+    margin-left: 50px;
   }
 
   .rewards-subtitle {
@@ -1405,7 +1481,8 @@ footer .team--wrp .footer--wrp p {
     color: #222;
     padding-bottom: 15px;
     text-align: left;
-    line-height: 1.5;
+    line-height: 40px;
+    margin: 20px 0 0;
   }
 
   .rewards-name {
@@ -1413,11 +1490,10 @@ footer .team--wrp .footer--wrp p {
     font-weight: 800;
     font-size: 16px;
     color: #222;
-    margin-bottom: 25px;
   }
 
   .rewards-name--partners {
-    margin-left: 10px;
+    margin: 0 0 0 10px;
   }
 
   .rewards-cards {
@@ -1436,7 +1512,11 @@ footer .team--wrp .footer--wrp p {
   }
 
   .rewards-partners__logo {
-    width: 684px;
+    width: 100%;
+  }
+
+  .rewards-logo {
+    padding: 10px;
   }
 
   footer .team--wrp {
@@ -1523,6 +1603,7 @@ footer .team--wrp .footer--wrp p {
     width: 611px;
     font-size: 35px;
     letter-spacing: -0.32px;
+    line-height: 1.2;
   }
 
   .header-box__line-4 {
@@ -1565,12 +1646,15 @@ footer .team--wrp .footer--wrp p {
 
   form .title {
     font-size: 35px;
+    line-height: 1.2;
     letter-spacing: -0.22px;
+    text-align: left;
   }
 
   form .subtitle {
     line-height: 28px;
     font-size: 18px;
+    text-align: left;
   }
 
   .privacy__link {
@@ -1578,14 +1662,16 @@ footer .team--wrp .footer--wrp p {
   }
 
   .question {
-    padding: 132px 15px 97px 15px;
+    padding: 132px 15px 0 15px;
     width: 1140px;
     display: flex;
     justify-content: space-between;
   }
 
   .question h2 {
-    width: 486px;
+    width: 490px;
+    font-size: 48px;
+    line-height: 60px;
     letter-spacing: -1.92px;
   }
 
@@ -1605,12 +1691,14 @@ footer .team--wrp .footer--wrp p {
   }
 
   .access-subtitle {
-    width: 1040px;
+    width: 1070px;
     font-family: 'acrom', sans-serif;
     font-weight: 800;
     font-size: 48px;
     color: #222;
-    padding-bottom: 116px;
+    padding-bottom: 100px;
+    line-height: 60px;
+    letter-spacing: -1.2px;
   }
 
   .access-cards {
@@ -1624,7 +1712,7 @@ footer .team--wrp .footer--wrp p {
 
   .access-card::before {
     content: '';
-    border: 2px solid #00eaff;
+    border: 1px solid #00eaff;
     width: 60px;
     display: block;
     position: absolute;
@@ -1639,7 +1727,8 @@ footer .team--wrp .footer--wrp p {
     font-size: 18px;
     color: #222;
     padding: 70px 30px;
-    line-height: 2;
+    line-height: 35px;
+    letter-spacing: -1px;
   }
 
   .access-card__number {
@@ -1761,7 +1850,7 @@ footer .team--wrp .footer--wrp p {
 
   .rewards-description {
     width: 700px;
-    margin: 30px;
+    margin: 30px 0;
   }
 
   .rewards-subtitle {
@@ -1771,7 +1860,7 @@ footer .team--wrp .footer--wrp p {
     color: #222;
     padding-bottom: 15px;
     text-align: left;
-    line-height: 1.5;
+    line-height: 60px;
   }
 
   .rewards-social {

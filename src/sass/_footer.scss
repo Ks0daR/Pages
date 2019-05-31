@@ -3,10 +3,13 @@ footer {
   background: url('../images/stars-des.png') no-repeat top center;
   //   background-image: url(../images/footer-img.png);
   background-size: cover;
-
+  
   .team--wrp {
     background: url('../images/team-mob.png') no-repeat center center;
     background-size: cover;
+    // width: 100%;
+    // height: 480px;
+    
 
     .footer--wrp {
       padding-top: 62px;
@@ -14,7 +17,7 @@ footer {
       margin: auto;
 
       .request--wrp {
-        margin-bottom: 302px;
+        margin-bottom: 280px;
         text-align: center;
 
         .request {
@@ -26,7 +29,7 @@ footer {
       .footer-description {
         display: flex;
         flex-direction: column;
-        padding-bottom: 36px;
+        padding-bottom: 16px;
         align-items: center;
       }
 
